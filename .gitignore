@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+#include<iostream>
+using namespace std;
+int main(){
+ 
+  int arr1[]={3,7,4,9,12,6,1,11,2,10};
+  int n=10; 
+  int l=1; int h=12;
+  int arr2[h];// creating an empty array ;
+  for(int i=0; i<n; i++){
+     arr2[arr1[i]]++; //assing the arr2 with value 1 as per match;
+  }
+  for(int i=1; i<h; i++){
+      if(arr2[i]==0){
+          //cheaking the index with 0 value;
+          cout<<"The missing element is:"<<i<<endl;;
+      }
+  }
+    return 0;
+}
